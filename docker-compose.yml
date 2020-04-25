@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  lambdaimageresizer:
+    image: ${DOCKER_REGISTRY-}lambdaimageresizer
+    build:
+      context: .
+      dockerfile: LambdaImageResizer/Dockerfile
